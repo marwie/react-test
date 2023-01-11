@@ -9,7 +9,8 @@
     "react-dom": "16.12.0",
     "react-scripts": "3.0.1",
     "styled-components": "5.1.0",
-    "styled-normalize": "8.0.7"
+    "styled-normalize": "8.0.7",
+    "@needle-tools/engine" : "2.58.1-pre.1"
   },
   "scripts": {
     "start": "react-scripts start",
