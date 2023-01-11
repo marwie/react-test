@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { CameraTarget } from '../needle/scripts/MyScripts.js';
 
 const cardWidth = 320;
 const borderRadius = 8;
@@ -74,6 +75,7 @@ const Style = styled.button`
   cursor: pointer;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12), 0 20px 20px -10px rgba(0, 0, 0, 0.125);
   transition: ${transition};
+  background: white;
 
   &:hover {
     transform: scale(1.04);
@@ -108,8 +110,15 @@ const Style = styled.button`
   }
 `;
 
-const Card = ({ hexa, title, description, image }) => (
-  <Style>
+
+const clickedCard = (id, index) => {
+  CameraTarget.setActive(index);
+  const el = document.getElementById(id);
+  el.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+}
+
+const Card = ({ index, hexa, title, description, image }) => (
+  <Style id={index} onClick={() => clickedCard(index, index)}>
     <Screenshot image={image} />
     <Content>
       <Title>{title}</Title>
