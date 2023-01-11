@@ -1,0 +1,5 @@
+{
+  "assetsDirectory": "public",
+  "scriptsDirectory": "src/needle/scripts",
+  "codegenDirectory": "src/needle/generated"
+}

@@ -6,6 +6,8 @@ import websites from './websites';
 
 import "@needle-tools/engine"
 
+import "./needle/generated/register_types.js"
+
 const Page = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,6 +18,16 @@ const Page = styled.div`
   min-height: -webkit-fill-available; /* mobile viewport bug fix */
   overflow-x: auto;
   scroll-behavior: smooth;
+
+  needle-engine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    min-height: -webkit-fill-available; /* mobile viewport bug fix */
+  }
 `;
 
 const Grid = styled.div`
@@ -46,6 +58,7 @@ const Grid = styled.div`
 export default function App() {
   return (
     <Page>
+      <needle-engine src="sceneRoot.glb"></needle-engine>
       <Badge fixed>Axeptio Project Card</Badge>
       <Grid>
         {websites.map((website, index) => (
