@@ -1,3 +1,5 @@
 node_modules
 src/*/generated
 public/*.glb
+build
+public/unity/*.glb

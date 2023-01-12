@@ -1,0 +1,7 @@
+{
+  "meta": null,
+  "absolutePath": "https://localhost:3000",
+  "sceneName": "Minimal",
+  "gzip": true,
+  "allowHotReload": true
+}

@@ -1,0 +1,28 @@
+
+> project-card@1.0.0 build
+> react-scripts build C:\Program Files (x86)\KTX-Software\bin
+
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  1.27 MB  build\static\js\main.b2509754.js
+
+The bundle size is significantly larger than recommended.
+Consider reducing it with code splitting: https://goo.gl/9VhYWB
+You can also analyze the project dependencies: https://goo.gl/LeUzfb
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+

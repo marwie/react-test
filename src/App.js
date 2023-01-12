@@ -60,7 +60,7 @@ const Grid = styled.div`
 export default function App() {
   return (
     <Page>
-      <needle-engine src="sceneRoot.glb"></needle-engine>
+      <needle-engine src="unity/sceneRoot.glb"></needle-engine>
       <Badge fixed>Axeptio Project Card</Badge>
       <Grid>
         {websites.map((website, index) => (

@@ -1,5 +1,6 @@
 {
-  "assetsDirectory": "public",
+  "buildDirectory": "build",
+  "assetsDirectory": "public/unity",
   "scriptsDirectory": "src/needle/scripts",
   "codegenDirectory": "src/needle/generated"
 }

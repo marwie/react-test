@@ -22,5 +22,11 @@
     "title": "Banana",
     "description": "https://www.smiirl.com/",
     "image": "banana.png"
+  },
+  {
+    "hexa": "#00ddff",
+    "title": "Ship",
+    "description": "Some ship",
+    "image": "Ship.png"
   }
 ]
